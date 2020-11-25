@@ -1,0 +1,30 @@
+{
+  "name": "@amanda-mitchell/micromark-extension-footer",
+  "version": "1.0.0",
+  "description": "A micromark extension that parses footer elements.",
+  "main": "index.js",
+  "repository": "https://github.com/amanda-mitchell/micromark-extension-footer",
+  "author": "Amanda Mitchell <she@mandymitchell.me>",
+  "license": "MIT",
+  "private": false,
+  "keywords": [
+    "micromark",
+    "micromark-extension",
+    "footer",
+    "container",
+    "extension",
+    "markdown",
+    "unified"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@amanda-mitchell/node-project-scripts": "^2.10.0",
+    "jest": "^26.6.3",
+    "micromark": "~2.10.0"
+  },
+  "peerDependencies": {
+    "micromark": "~2.10.0"
+  }
+}
