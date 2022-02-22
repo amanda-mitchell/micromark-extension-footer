@@ -20,7 +20,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@amanda-mitchell/node-project-scripts": "^2.12.0",
+    "@amanda-mitchell/node-project-scripts": "^3.0.11",
     "jest": "^27.0.6",
     "micromark": "~2.11.0"
   },
