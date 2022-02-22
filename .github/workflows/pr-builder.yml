@@ -16,7 +16,7 @@ jobs:
       - name: Prettier check
         run: yarn prettier --check "./**/*.{js,md,mjs,cjs,jsx,ts,tsx}"
       - name: Lint
-        run: yarn eslint "./**/*.js,mjs,cjs,jsx,ts,tsx"
+        run: yarn eslint "./**/*.{js,mjs,cjs,jsx,ts,tsx}"
       - name: Test
         run: yarn jest
         env:
