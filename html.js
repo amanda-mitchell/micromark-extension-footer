@@ -1,4 +1,4 @@
-function createHtmlExtension() {
+export default function createHtmlExtension() {
   function enterFooter(event) {
     const isTight = !event.loose;
     this.getData('tightStack').push(isTight);
@@ -25,5 +25,3 @@ function createHtmlExtension() {
     },
   };
 }
-
-module.exports = createHtmlExtension;

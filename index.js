@@ -1,8 +1,8 @@
-const codes = require('micromark/dist/character/codes');
-const markdownSpace = require('micromark/dist/character/markdown-space');
-const constants = require('micromark/dist/constant/constants');
-const types = require('micromark/dist/constant/types');
-const spaceFactory = require('micromark/dist/tokenize/factory-space');
+import codes from 'micromark/dist/character/codes';
+import markdownSpace from 'micromark/dist/character/markdown-space';
+import constants from 'micromark/dist/constant/constants';
+import types from 'micromark/dist/constant/types';
+import spaceFactory from 'micromark/dist/tokenize/factory-space';
 
 const nodeNames = {
   footer: 'footer',
@@ -90,8 +90,8 @@ const footer = {
   exit,
 };
 
-module.exports = function directive() {
+export default function directive() {
   return {
     document: { [codes.caret]: [footer] },
   };
-};
+}

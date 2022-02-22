@@ -16,12 +16,12 @@
     "markdown",
     "unified"
   ],
+  "type": "module",
   "publishConfig": {
     "access": "public"
   },
   "devDependencies": {
     "@amanda-mitchell/node-project-scripts": "^3.0.11",
-    "jest": "^27.0.6",
     "micromark": "~2.11.0"
   },
   "peerDependencies": {

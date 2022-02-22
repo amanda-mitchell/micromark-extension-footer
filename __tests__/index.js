@@ -1,7 +1,7 @@
-const micromark = require('micromark');
+import micromark from 'micromark';
 
-const syntax = require('../index');
-const html = require('../html');
+import syntax from '../index.js';
+import html from '../html.js';
 
 function renderMarkdown(document) {
   return micromark(document, {
