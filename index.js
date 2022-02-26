@@ -1,8 +1,8 @@
-import codes from 'micromark/dist/character/codes';
-import markdownSpace from 'micromark/dist/character/markdown-space';
-import constants from 'micromark/dist/constant/constants';
-import types from 'micromark/dist/constant/types';
-import spaceFactory from 'micromark/dist/tokenize/factory-space';
+import { codes } from 'micromark-util-symbol/codes.js';
+import { markdownSpace } from 'micromark-util-character';
+import { constants } from 'micromark-util-symbol/constants.js';
+import { types } from 'micromark-util-symbol/types.js';
+import { factorySpace } from 'micromark-factory-space';
 
 const nodeNames = {
   footer: 'footer',
@@ -69,7 +69,7 @@ function tokenize(effects, ok, nok) {
 
 function tokenizeContinuation(effects, ok, nok) {
   this.containerState.lineCount++;
-  return spaceFactory(
+  return factorySpace(
     effects,
     effects.attempt(footer, ok, nok),
     types.linePrefix,

@@ -22,9 +22,14 @@
   },
   "devDependencies": {
     "@amanda-mitchell/node-project-scripts": "^3.0.11",
-    "micromark": "~2.11.0"
+    "micromark": "~3.0.10"
   },
   "peerDependencies": {
-    "micromark": "~2.11.0"
+    "micromark": "~3.0.10"
+  },
+  "dependencies": {
+    "micromark-factory-space": "^1.0.0",
+    "micromark-util-character": "^1.1.0",
+    "micromark-util-symbol": "^1.0.1"
   }
 }

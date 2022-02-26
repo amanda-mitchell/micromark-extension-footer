@@ -1,4 +1,4 @@
-import micromark from 'micromark';
+import { micromark } from 'micromark';
 
 import syntax from '../index.js';
 import html from '../html.js';
@@ -30,10 +30,8 @@ test('it parses a multi line footer', () => {
   expectRenderResult(
     `^^ a footer
 with a second line`,
-    `<footer>
-<p>a footer
-with a second line</p>
-</footer>`
+    `<footer>a footer
+with a second line</footer>`
   );
 });
 
@@ -41,10 +39,8 @@ test('it ignores the ^^ prefix on successive lines', () => {
   expectRenderResult(
     `^^ a footer
 ^^ with a second line`,
-    `<footer>
-<p>a footer
-with a second line</p>
-</footer>`
+    `<footer>a footer
+with a second line</footer>`
   );
 });
 
@@ -77,12 +73,10 @@ test('it allows a blockquote inside of a footer', () => {
   expectRenderResult(
     `^^ a footer
 ^^ > containing a blockquote`,
-    `<footer>
-<p>a footer</p>
+    `<footer>a footer
 <blockquote>
 <p>containing a blockquote</p>
-</blockquote>
-</footer>`
+</blockquote></footer>`
   );
 });
 
