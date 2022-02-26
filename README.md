@@ -15,10 +15,10 @@ yarn add @amanda-mitchell/micromark-extension-footer
 `micromark` can be configured to use this plugin by specifying its `extensions` and `htmlExtensions` options:
 
 ```javascript
-const micromark = require('micromark');
+import { micromark } 'micromark';
 
-const syntax = require('@amanda-mitchell/micromark-extension-footer');
-const html = require('@amanda-mitchell/micromark-extension-footer/html');
+import syntax from '@amanda-mitchell/micromark-extension-footer';
+import html from '@amanda-mitchell/micromark-extension-footer/html.js';
 
 const document = `hello, world!
 
