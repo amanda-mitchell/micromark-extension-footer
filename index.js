@@ -1,7 +1,5 @@
-import { codes } from 'micromark-util-symbol/codes.js';
+import { codes, constants, types } from 'micromark-util-symbol';
 import { markdownSpace } from 'micromark-util-character';
-import { constants } from 'micromark-util-symbol/constants.js';
-import { types } from 'micromark-util-symbol/types.js';
 import { factorySpace } from 'micromark-factory-space';
 
 const nodeNames = {
