@@ -21,7 +21,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@amanda-mitchell/node-project-scripts": "^3.0.11",
+    "@amanda-mitchell/node-project-scripts": "^4.4.0",
     "micromark": "~4.0.0"
   },
   "peerDependencies": {
