@@ -71,7 +71,7 @@ function tokenizeContinuation(effects, ok, nok) {
     effects,
     effects.attempt(footer, ok, nok),
     types.linePrefix,
-    constants.tabSize
+    constants.tabSize,
   );
 }
 
