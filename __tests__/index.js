@@ -31,7 +31,7 @@ test('it parses a multi line footer', () => {
     `^^ a footer
 with a second line`,
     `<footer>a footer
-with a second line</footer>`
+with a second line</footer>`,
   );
 });
 
@@ -40,7 +40,7 @@ test('it ignores the ^^ prefix on successive lines', () => {
     `^^ a footer
 ^^ with a second line`,
     `<footer>a footer
-with a second line</footer>`
+with a second line</footer>`,
   );
 });
 
@@ -52,7 +52,7 @@ test('it allows a footer inside of a blockquote', () => {
     `<blockquote>
 <p>a quotation</p>
 <footer>its citation</footer>
-</blockquote>`
+</blockquote>`,
   );
 });
 
@@ -65,7 +65,7 @@ test('it allows a footer inside of a list item', () => {
     `<ul>
 <li>list item
 continuation of list item<footer>footer in list item</footer></li>
-</ul>`
+</ul>`,
   );
 });
 
@@ -76,7 +76,7 @@ test('it allows a blockquote inside of a footer', () => {
     `<footer>a footer
 <blockquote>
 <p>containing a blockquote</p>
-</blockquote></footer>`
+</blockquote></footer>`,
   );
 });
 
@@ -88,6 +88,6 @@ test('it allows multi paragraph footers', () => {
     `<footer>
 <p>footer</p>
 <p>second paragraph</p>
-</footer>`
+</footer>`,
   );
 });
