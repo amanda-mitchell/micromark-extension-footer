@@ -4519,9 +4519,9 @@ micromark-factory-label@^2.0.0:
     micromark-util-types "^2.0.0"
 
 micromark-factory-space@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/micromark-factory-space/-/micromark-factory-space-2.0.0.tgz#5e7afd5929c23b96566d0e1ae018ae4fcf81d030"
-  integrity sha512-TKr+LIDX2pkBJXFLzpyPyljzYK3MtmllMUMODTQJIUfDGncESaqB90db9IAUcz4AZAJFdd8U9zOp9ty1458rxg==
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/micromark-factory-space/-/micromark-factory-space-2.0.1.tgz#36d0212e962b2b3121f8525fc7a3c7c029f334fc"
+  integrity sha512-zRkxjtBxxLd2Sc0d+fbnEunsTj46SWXgXciZmHq0kDYGnck/ZSGj9/wULTV95uoeYiK5hRXP2mJ98Uo4cq/LQg==
   dependencies:
     micromark-util-character "^2.0.0"
     micromark-util-types "^2.0.0"
